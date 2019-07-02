@@ -1,0 +1,10 @@
+#!/bin/bash
+export PATH="/home/vagrant/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export PYTHON_CONFIGURE_OPTS="--enable-shared"
+# http://pyenv.qiniudn.com/pythons/
+export PYTHON_BUILD_MIRROR_URL="http://pyenv.qiniudn.com/pythons/"
